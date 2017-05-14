@@ -29,7 +29,7 @@ public enum AttributeRange {
     case all
     case portion(of: Portion)
     
-    enum Portion {
+    public enum Portion {
         case string(String)
         case range(NSRange)
     }

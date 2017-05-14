@@ -10,7 +10,9 @@
 		D1C438F01EC8A86900B0C021 /* SwiftyAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C438E61EC8A86900B0C021 /* SwiftyAttributedString.framework */; };
 		D1C438F51EC8A86900B0C021 /* SwiftyAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C438F41EC8A86900B0C021 /* SwiftyAttributedStringTests.swift */; };
 		D1C438F71EC8A86900B0C021 /* SwiftyAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C438E91EC8A86900B0C021 /* SwiftyAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1C439011EC8A8A500B0C021 /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = D1C439001EC8A8A500B0C021 /* Sources */; };
+		D1C439361EC8AC8A00B0C021 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C439331EC8AC8A00B0C021 /* Attribute.swift */; };
+		D1C439371EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */; };
+		D1C439381EC8AC8A00B0C021 /* String+AttributeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,9 @@
 		D1C438EF1EC8A86900B0C021 /* SwiftyAttributedStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyAttributedStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C438F41EC8A86900B0C021 /* SwiftyAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAttributedStringTests.swift; sourceTree = "<group>"; };
 		D1C438F61EC8A86900B0C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1C439001EC8A8A500B0C021 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = SOURCE_ROOT; };
+		D1C439331EC8AC8A00B0C021 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
+		D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+AttributeExtension.swift"; path = "Sources/NSMutableAttributedString+AttributeExtension.swift"; sourceTree = "<group>"; };
+		D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+AttributeExtension.swift"; path = "Sources/String+AttributeExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,7 @@
 		D1C438E81EC8A86900B0C021 /* SwiftyAttributedString */ = {
 			isa = PBXGroup;
 			children = (
-				D1C439001EC8A8A500B0C021 /* Sources */,
+				D1C439321EC8AC5100B0C021 /* Sources */,
 				D1C438E91EC8A86900B0C021 /* SwiftyAttributedString.h */,
 				D1C438EA1EC8A86900B0C021 /* Info.plist */,
 			);
@@ -87,6 +91,16 @@
 				D1C438F61EC8A86900B0C021 /* Info.plist */,
 			);
 			path = SwiftyAttributedStringTests;
+			sourceTree = "<group>";
+		};
+		D1C439321EC8AC5100B0C021 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D1C439331EC8AC8A00B0C021 /* Attribute.swift */,
+				D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */,
+				D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +166,7 @@
 					D1C438E51EC8A86900B0C021 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V8AZ23YEL4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D1C438EE1EC8A86900B0C021 = {
@@ -184,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C439011EC8A8A500B0C021 /* Sources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C439381EC8AC8A00B0C021 /* String+AttributeExtension.swift in Sources */,
+				D1C439361EC8AC8A00B0C021 /* Attribute.swift in Sources */,
+				D1C439371EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +343,7 @@
 		D1C438FB1EC8A86900B0C021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V8AZ23YEL4;
@@ -338,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.SwiftyAttributedString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -345,6 +364,7 @@
 		D1C438FC1EC8A86900B0C021 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V8AZ23YEL4;
@@ -364,6 +384,7 @@
 		D1C438FE1EC8A86900B0C021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V8AZ23YEL4;
 				INFOPLIST_FILE = SwiftyAttributedStringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -376,6 +397,7 @@
 		D1C438FF1EC8A86900B0C021 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V8AZ23YEL4;
 				INFOPLIST_FILE = SwiftyAttributedStringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -404,6 +426,7 @@
 				D1C438FC1EC8A86900B0C021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1C438FD1EC8A86900B0C021 /* Build configuration list for PBXNativeTarget "SwiftyAttributedStringTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +435,7 @@
 				D1C438FF1EC8A86900B0C021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
