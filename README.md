@@ -12,6 +12,20 @@
 - [x] Easy range specification
 - [x] Chainable methods
 
+## Installation
+
+### Carthage
+Add the following line to Cartfile
+```
+github "touyu/SwiftyAttributedString"
+```
+
+Create framework
+
+```
+$ carthage update --platform iOS
+```
+
 ## Usage
 
 ```swift
