@@ -8,3 +8,24 @@
 - [x] Better autocompletion
 - [x] Easy range specification
 - [x] Chainable methods
+
+## Usage
+
+```swift
+textView.attributedText = "sample text"
+  .add(attribute: Attribute(value: .font(.systemFont(ofSize: 16)),
+                            range: .all))
+  .add(attribute: Attribute(value: .foregroundColor(.orange),
+                            range: .portion(of: .string("sample"))))
+```
+
+
+```swift
+textView.attributedText = "sample text"
+  .add(attributes: [Attribute(value: .strikethroughStyle(1.0),
+                              range: .portion(of: .string("sample"))),
+                    Attribute(value: .underlineStyle(1.0),
+                              range: .portion(of: .string("text")))])
+```
+
+
