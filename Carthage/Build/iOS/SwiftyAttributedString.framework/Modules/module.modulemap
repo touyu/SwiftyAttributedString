@@ -4,3 +4,7 @@ framework module SwiftyAttributedString {
   export *
   module * { export * }
 }
+
+module SwiftyAttributedString.Swift {
+    header "SwiftyAttributedString-Swift.h"
+}

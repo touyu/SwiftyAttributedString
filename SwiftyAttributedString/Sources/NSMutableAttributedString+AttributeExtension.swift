@@ -9,7 +9,7 @@
 import UIKit
 
 public extension NSMutableAttributedString {
-    func add(attribute: Attribute) -> NSMutableAttributedString {
+    public func add(attribute: Attribute) -> NSMutableAttributedString {
         let text = self.string
         let range = attribute.range.toNSRange(string: text)
         
@@ -47,7 +47,7 @@ public extension NSMutableAttributedString {
         return self
     }
     
-    func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
+    public func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
         return self.add(attribute: Attribute(value: attributeValue, range: .all))
     }
 }

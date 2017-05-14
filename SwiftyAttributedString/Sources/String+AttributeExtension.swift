@@ -10,22 +10,22 @@ import UIKit
 
 public extension String {
     
-    func findRange(_ string: String?) -> NSRange {
+    public func findRange(_ string: String?) -> NSRange {
         guard let string = string else { return NSRange() }
         let titleRange = (self as NSString).range(of: string)
         return titleRange
     }
     
-    func add(attribute: Attribute) -> NSMutableAttributedString {
+    public func add(attribute: Attribute) -> NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self)
         return attributedString.add(attribute: attribute)
     }
     
-    func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
+    public func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
         return self.add(attribute: Attribute(value: attributeValue, range: .all))
     }
     
-    func add(attributes: [Attribute]) -> NSMutableAttributedString {
+    public func add(attributes: [Attribute]) -> NSMutableAttributedString {
         var attributedString = NSMutableAttributedString(string: self)
         for attribute in attributes {
             attributedString = attributedString.add(attribute: attribute)

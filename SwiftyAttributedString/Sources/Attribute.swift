@@ -34,7 +34,7 @@ public enum AttributeRange {
         case range(NSRange)
     }
     
-    func toNSRange(string: String) -> NSRange {
+    public func toNSRange(string: String) -> NSRange {
         
         switch self {
         case .all:
@@ -54,10 +54,10 @@ public enum AttributeRange {
 }
 
 public struct Attribute {
-    var value: AttributeValue
-    var range: AttributeRange
+    public var value: AttributeValue
+    public var range: AttributeRange
     
-    init(value: AttributeValue, range: AttributeRange = .all) {
+    public init(value: AttributeValue, range: AttributeRange = .all) {
         self.value = value
         self.range = range
     }
