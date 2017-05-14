@@ -36,7 +36,7 @@ textView.attributedText = "sample text"
                             range: .portion(of: .string("sample"))))
 ```
 
-<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=50>
+<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=60>
 
 ```swift
 textView.attributedText = "sample text"
@@ -46,6 +46,6 @@ textView.attributedText = "sample text"
                               range: .portion(of: .string("text")))])
 ```
 
-<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/002.png" height=60>
+<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/002.png" height=70>
 
 
