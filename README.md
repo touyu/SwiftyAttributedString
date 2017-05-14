@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/logo.png" height=60>
+  <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/logo.png" width=900>
 </p>
 
 ![Swift 3.1.1](https://img.shields.io/badge/Swift-3.1.0-orange.svg)
