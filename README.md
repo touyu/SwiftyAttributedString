@@ -19,6 +19,7 @@ textView.attributedText = "sample text"
                             range: .portion(of: .string("sample"))))
 ```
 
+<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=50>
 
 ```swift
 textView.attributedText = "sample text"
@@ -27,5 +28,7 @@ textView.attributedText = "sample text"
                     Attribute(value: .underlineStyle(1.0),
                               range: .portion(of: .string("text")))])
 ```
+
+<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/002.png" height=60>
 
 
