@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SwiftyAttributedString"
-  s.version      = "0.5.0"
+  s.version      = "0.5.1"
   s.summary      = "The library that makes AttributedString easy to use"
   s.description  = <<-DESC
                     - Better autocompletion.
