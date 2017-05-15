@@ -43,16 +43,20 @@ textView.attributedText = "SwiftyAttributedString"
                                       range: .portion(of: .string("Attributed"))))
 ```
 
-<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
-
 ```swift
-textView.attributedText = "sample text"
-  .add(attributes: [Attribute(value: .strikethroughStyle(1.0),
-                              range: .portion(of: .string("sample"))),
-                    Attribute(value: .underlineStyle(1.0),
-                              range: .portion(of: .string("text")))])
+textView.attributedText = "SwiftyAttributedString"
+            .add(attributes: [Attribute(value: .font(.systemFont(ofSize: 16))),
+                              Attribute(value: .font(.boldSystemFont(ofSize: 16)),
+                                        range: .portion(of: .string("String"))),
+                              Attribute(value: .foregroundColor(.blue),
+                                        range: .portion(of: .string("Swifty"))),
+                              Attribute(value: .foregroundColor(.red),
+                                        range: .portion(of: .string("Attributed"))),
+                              Attribute(value: .foregroundColor(.orange),
+                                        range: .portion(of: .string("String"))),
+                              Attribute(value: .underlineStyle(1.0),
+                                        range: .portion(of: .string("Attributed")))
+                ])
 ```
 
-<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/002.png" height=80>
-
-
+<img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
