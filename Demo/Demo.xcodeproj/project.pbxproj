@@ -13,7 +13,7 @@
 		D150FADF1EC968A00099845C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D150FADE1EC968A00099845C /* Assets.xcassets */; };
 		D150FAE21EC968A00099845C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150FAE01EC968A00099845C /* LaunchScreen.storyboard */; };
 		D150FAED1EC968A00099845C /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150FAEC1EC968A00099845C /* DemoTests.swift */; };
-		D150FB011EC969500099845C /* SwiftyAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D150FAFD1EC968BA0099845C /* SwiftyAttributedString.framework */; };
+		D150FB0C1EC96A7A0099845C /* SwiftyAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D150FB091EC96A6E0099845C /* SwiftyAttributedString.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,16 +24,16 @@
 			remoteGlobalIDString = D150FAD31EC968A00099845C;
 			remoteInfo = Demo;
 		};
-		D150FAFC1EC968BA0099845C /* PBXContainerItemProxy */ = {
+		D150FB081EC96A6E0099845C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D150FAF71EC968BA0099845C /* SwiftyAttributedString.xcodeproj */;
+			containerPortal = D150FB031EC96A6E0099845C /* SwiftyAttributedString.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D1C438E61EC8A86900B0C021;
 			remoteInfo = SwiftyAttributedString;
 		};
-		D150FAFE1EC968BA0099845C /* PBXContainerItemProxy */ = {
+		D150FB0A1EC96A6E0099845C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D150FAF71EC968BA0099845C /* SwiftyAttributedString.xcodeproj */;
+			containerPortal = D150FB031EC96A6E0099845C /* SwiftyAttributedString.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D1C438EF1EC8A86900B0C021;
 			remoteInfo = SwiftyAttributedStringTests;
@@ -51,7 +51,7 @@
 		D150FAE81EC968A00099845C /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150FAEC1EC968A00099845C /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		D150FAEE1EC968A00099845C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D150FAF71EC968BA0099845C /* SwiftyAttributedString.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyAttributedString.xcodeproj; path = ../../SwiftyAttributedString.xcodeproj; sourceTree = "<group>"; };
+		D150FB031EC96A6E0099845C /* SwiftyAttributedString.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyAttributedString.xcodeproj; path = ../SwiftyAttributedString.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D150FB011EC969500099845C /* SwiftyAttributedString.framework in Frameworks */,
+				D150FB0C1EC96A7A0099845C /* SwiftyAttributedString.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		D150FACB1EC968A00099845C = {
 			isa = PBXGroup;
 			children = (
-				D150FAF71EC968BA0099845C /* SwiftyAttributedString.xcodeproj */,
+				D150FB031EC96A6E0099845C /* SwiftyAttributedString.xcodeproj */,
 				D150FAD61EC968A00099845C /* Demo */,
 				D150FAEB1EC968A00099845C /* DemoTests */,
 				D150FAD51EC968A00099845C /* Products */,
@@ -114,11 +114,11 @@
 			path = DemoTests;
 			sourceTree = "<group>";
 		};
-		D150FAF81EC968BA0099845C /* Products */ = {
+		D150FB041EC96A6E0099845C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D150FAFD1EC968BA0099845C /* SwiftyAttributedString.framework */,
-				D150FAFF1EC968BA0099845C /* SwiftyAttributedStringTests.xctest */,
+				D150FB091EC96A6E0099845C /* SwiftyAttributedString.framework */,
+				D150FB0B1EC96A6E0099845C /* SwiftyAttributedStringTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,8 +197,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D150FAF81EC968BA0099845C /* Products */;
-					ProjectRef = D150FAF71EC968BA0099845C /* SwiftyAttributedString.xcodeproj */;
+					ProductGroup = D150FB041EC96A6E0099845C /* Products */;
+					ProjectRef = D150FB031EC96A6E0099845C /* SwiftyAttributedString.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -210,18 +210,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D150FAFD1EC968BA0099845C /* SwiftyAttributedString.framework */ = {
+		D150FB091EC96A6E0099845C /* SwiftyAttributedString.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftyAttributedString.framework;
-			remoteRef = D150FAFC1EC968BA0099845C /* PBXContainerItemProxy */;
+			remoteRef = D150FB081EC96A6E0099845C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D150FAFF1EC968BA0099845C /* SwiftyAttributedStringTests.xctest */ = {
+		D150FB0B1EC96A6E0099845C /* SwiftyAttributedStringTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SwiftyAttributedStringTests.xctest;
-			remoteRef = D150FAFE1EC968BA0099845C /* PBXContainerItemProxy */;
+			remoteRef = D150FB0A1EC96A6E0099845C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -462,6 +462,7 @@
 				D150FAF31EC968A00099845C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D150FAF41EC968A00099845C /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				D150FAF61EC968A00099845C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
