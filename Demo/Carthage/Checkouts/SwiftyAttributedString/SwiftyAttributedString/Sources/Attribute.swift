@@ -58,7 +58,7 @@ public struct Attribute {
     public var range: AttributeRange
     
     public init(value: AttributeValue, range: AttributeRange = .all) {
-        self.values.append(value)
+        self.values = [value]
         self.range = range
     }
     
