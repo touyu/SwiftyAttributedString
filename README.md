@@ -55,8 +55,7 @@ textView.attributedText = "SwiftyAttributedString"
                               Attribute(value: .foregroundColor(.orange),
                                         range: .portion(of: .string("String"))),
                               Attribute(value: .underlineStyle(1.0),
-                                        range: .portion(of: .string("Attributed")))
-                ])
+                                        range: .portion(of: .string("Attributed")))])
 ```
 
 <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
