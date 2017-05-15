@@ -5,7 +5,7 @@
 ![Swift 3.0.2](https://img.shields.io/badge/Swift-3.0.2-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftyAttributedString.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftyAttributedString.svg)](#cocoapods)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/touyu/SwiftyAttributedString#carthage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 ## Features
@@ -17,15 +17,26 @@
 ## Installation
 
 ### Carthage
-Add the following line to Cartfile
+Add the following line to Cartfile:
 ```
 github "touyu/SwiftyAttributedString"
 ```
 
-Create framework
+Create framework:
 
 ```
 $ carthage update --platform iOS
+```
+
+### CocoaPods
+Add the following line to Podfile:
+```swift
+pod 'SwiftyAttributedString'
+```
+
+Enter the following command at the terminal:
+```
+$ pod install
 ```
 
 ## Example
