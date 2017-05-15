@@ -59,3 +59,21 @@ textView.attributedText = "SwiftyAttributedString"
 ```
 
 <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
+
+## References
+| Dictionary Key                                | Attributed Value                                    |
+| ----------------------------------------------| --------------------------------------------------- |
+| `NSFontAttributeName`                         | `.font(UIFont)`                                     |
+| `NSForegroundColorAttributeName`              | `.foregroundColor(UIColor)`                         |
+| `NSBackgroundColorAttributeName`              | `.backgroundColor(UIColor)`                         |
+| `NSKernAttributeName`                         | `.kern(NSNumber)`                                   |
+| `NSStrikethroughStyleAttributeName`           | `.strikethroughStyle(NSNumber)`                     |
+| `NSUnderlineStyleAttributeName`               | `.underlineStyle(NSNumber)`                         |
+| `NSStrokeColorAttributeName`                  | `.strokeColor(UIColor)`                             |
+| `NSStrokeWidthAttributeName`                  | `.strokeWidth(NSNumber)`                            |
+| `NSShadowAttributeName`                       | `.shadow(NSShadow)`                                 |
+| `NSTextEffectAttributeName`                   | `.textEffect(SwiftyAttributedString.TextEffect)`    |
+| `NSLinkAttributeName`                         | `.link(URL)`                                        |
+| `NSBaselineOffsetAttributeName`               | `.baselineOffset(NSNumber)`                         |
+| `NSObliquenessAttributeName`                  | `.obliqueness(NSNumber)`                            |
+| `NSExpansionAttributeName`                    | `.expansion(NSNumber)`                              |
