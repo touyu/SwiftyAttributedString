@@ -54,11 +54,16 @@ public enum AttributeRange {
 }
 
 public struct Attribute {
-    public var value: AttributeValue
+    public var values: [AttributeValue] = []
     public var range: AttributeRange
     
     public init(value: AttributeValue, range: AttributeRange = .all) {
-        self.value = value
+        self.values.append(value)
+        self.range = range
+    }
+    
+    public init(values: [AttributeValue], range: AttributeRange = .all) {
+        self.values = values
         self.range = range
     }
 }
