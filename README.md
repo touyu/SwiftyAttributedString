@@ -26,7 +26,7 @@ Create framework
 $ carthage update --platform iOS
 ```
 
-## Usage
+## Example
 
 ```swift
 textView.attributedText = "SwiftyAttributedString"
