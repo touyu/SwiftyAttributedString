@@ -9,11 +9,24 @@
 import UIKit
 
 public extension NSMutableAttributedString {
+    
     public func add(attribute: Attribute) -> NSMutableAttributedString {
         let text = self.string
         let range = attribute.range.toNSRange(string: text)
         
-        switch attribute.value {
+        for value in attribute.values {
+            convertNSMutableAttributedString(value: value, range: range)
+        }
+        
+        return self
+    }
+    
+    public func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
+        return self.add(attribute: Attribute(value: attributeValue, range: .all))
+    }
+    
+    private func convertNSMutableAttributedString(value: AttributeValue, range: NSRange) {
+        switch value {
         case .font(let font):
             self.addAttribute(NSFontAttributeName, value: font, range: range)
         case .foregroundColor(let color):
@@ -43,11 +56,5 @@ public extension NSMutableAttributedString {
         case .expansion(let nsNumber):
             self.addAttribute(NSExpansionAttributeName, value: nsNumber, range: range)
         }
-        
-        return self
-    }
-    
-    public func add(attributeValue: AttributeValue) -> NSMutableAttributedString {
-        return self.add(attribute: Attribute(value: attributeValue, range: .all))
     }
 }
