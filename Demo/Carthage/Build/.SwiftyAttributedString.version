@@ -1,8 +1,16 @@
 {
-  "commitish" : "0.4.1",
+  "commitish" : "0.4.2",
   "iOS" : [
     {
-      "hash" : "3ca9a6f7dd3fa121efe8e9d22eb630466d0daa84285995b0219e8a7c801cd6b4",
+      "hash" : "7c8167354bb14a30a76ffbe8131948cc3dc0b3ff2276176c2768a70f21878505",
+      "name" : "SwiftyAttributedString"
+    },
+    {
+      "hash" : "7c8167354bb14a30a76ffbe8131948cc3dc0b3ff2276176c2768a70f21878505",
+      "name" : "SwiftyAttributedString"
+    },
+    {
+      "hash" : "7c8167354bb14a30a76ffbe8131948cc3dc0b3ff2276176c2768a70f21878505",
       "name" : "SwiftyAttributedString"
     }
   ]
