@@ -60,6 +60,34 @@ textView.attributedText = "SwiftyAttributedString"
 
 <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
 
+## Usage
+```swift
+// If you do not specify a range, the value applies to the full range
+let attribute = Attribute(value: .font(.systemFont(ofSize: 16)))
+```
+
+```swift
+let attribute = Attribute(value: .font(.systemFont(ofSize: 16)),
+                          range: .all)
+```
+
+```swift
+// Applied only to "Swifty"                          
+let attribute = Attribute(values: [.font(.systemFont(ofSize: 16)),
+                                   .foregroundColor(.blue)],
+                          range: .portion(of: .string("Swifty")))
+```
+
+- - -
+
+```swift
+textView.attributedText = "SwiftyAttributedString".add(attribute: attribute)
+```
+
+```swift
+textView.attributedText = "SwiftyAttributedString".add(attributes: [attribute1, attribute2, attribute3])
+```
+
 ## References
 | Dictionary Key                                | Attributed Value                                    |
 | ----------------------------------------------| --------------------------------------------------- |
