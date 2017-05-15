@@ -71,9 +71,3 @@ public struct Attribute {
 public enum TextEffect: String {
     case letterPressStyle = "_UIKitNewLetterpressStyle"
 }
-
-public struct TestStruct {
-    public func testFunc() {
-        
-    }
-}
