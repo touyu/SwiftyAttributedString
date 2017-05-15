@@ -1,1 +1,1 @@
-github "touyu/SwiftyAttributedString"
+github "touyu/SwiftyAttributedString" ~> 0.4.2
