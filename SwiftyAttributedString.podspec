@@ -8,13 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name         = "SwiftyAttributedString"
-  s.version      = "0.5.1"
+  s.version      = "1.0.0"
   s.summary      = "The library that makes AttributedString easy to use"
-  s.description  = <<-DESC
-                    - Better autocompletion.
-                    - Easy range specification.
-                    - Chainable methods.
-                   DESC
+  s.description  = "
+                    - Comfortable NSAttributedString
+                    - Better autocompletion
+                    - Easy range specification
+                    - Chainable methods
+                   "
   s.homepage     = "https://github.com/touyu/SwiftyAttributedString"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Yuto Akiba" => "akkey0222@gmail.com" }

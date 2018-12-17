@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D196347121C7B362002F7FBA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196347021C7B362002F7FBA /* String+Extension.swift */; };
+		D196347321C7B37A002F7FBA /* SwiftyAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196347221C7B37A002F7FBA /* SwiftyAttributedString.swift */; };
 		D1C438F01EC8A86900B0C021 /* SwiftyAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C438E61EC8A86900B0C021 /* SwiftyAttributedString.framework */; };
 		D1C438F51EC8A86900B0C021 /* SwiftyAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C438F41EC8A86900B0C021 /* SwiftyAttributedStringTests.swift */; };
 		D1C438F71EC8A86900B0C021 /* SwiftyAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C438E91EC8A86900B0C021 /* SwiftyAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,15 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D196347021C7B362002F7FBA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D196347221C7B37A002F7FBA /* SwiftyAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAttributedString.swift; sourceTree = "<group>"; };
+		D196347721C7B774002F7FBA /* SwiftyAttributedString.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyAttributedString.framework; path = Carthage/Build/iOS/SwiftyAttributedString.framework; sourceTree = "<group>"; };
 		D1C438E61EC8A86900B0C021 /* SwiftyAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C438E91EC8A86900B0C021 /* SwiftyAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyAttributedString.h; sourceTree = "<group>"; };
 		D1C438EA1EC8A86900B0C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1C438EF1EC8A86900B0C021 /* SwiftyAttributedStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyAttributedStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C438F41EC8A86900B0C021 /* SwiftyAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAttributedStringTests.swift; sourceTree = "<group>"; };
 		D1C438F61EC8A86900B0C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1C439331EC8AC8A00B0C021 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
-		D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+AttributeExtension.swift"; path = "Sources/NSMutableAttributedString+AttributeExtension.swift"; sourceTree = "<group>"; };
-		D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+AttributeExtension.swift"; path = "Sources/String+AttributeExtension.swift"; sourceTree = "<group>"; };
+		D1C439331EC8AC8A00B0C021 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+AttributeExtension.swift"; sourceTree = "<group>"; };
+		D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AttributeExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D196346F21C7B2E9002F7FBA /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				D1C439331EC8AC8A00B0C021 /* Attribute.swift */,
+				D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */,
+				D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		D196347621C7B774002F7FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D196347721C7B774002F7FBA /* SwiftyAttributedString.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1C438DC1EC8A86900B0C021 = {
 			isa = PBXGroup;
 			children = (
 				D1C438E81EC8A86900B0C021 /* SwiftyAttributedString */,
 				D1C438F31EC8A86900B0C021 /* SwiftyAttributedStringTests */,
 				D1C438E71EC8A86900B0C021 /* Products */,
+				D196347621C7B774002F7FBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,9 +120,9 @@
 		D1C439321EC8AC5100B0C021 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D1C439331EC8AC8A00B0C021 /* Attribute.swift */,
-				D1C439341EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift */,
-				D1C439351EC8AC8A00B0C021 /* String+AttributeExtension.swift */,
+				D196346F21C7B2E9002F7FBA /* Deprecated */,
+				D196347021C7B362002F7FBA /* String+Extension.swift */,
+				D196347221C7B37A002F7FBA /* SwiftyAttributedString.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -160,18 +184,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Yuto Akiba";
 				TargetAttributes = {
 					D1C438E51EC8A86900B0C021 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V8AZ23YEL4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					D1C438EE1EC8A86900B0C021 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V8AZ23YEL4;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -216,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D196347121C7B362002F7FBA /* String+Extension.swift in Sources */,
 				D1C439381EC8AC8A00B0C021 /* String+AttributeExtension.swift in Sources */,
 				D1C439361EC8AC8A00B0C021 /* Attribute.swift in Sources */,
+				D196347321C7B37A002F7FBA /* SwiftyAttributedString.swift in Sources */,
 				D1C439371EC8AC8A00B0C021 /* NSMutableAttributedString+AttributeExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,15 +277,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -303,15 +338,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -350,6 +393,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftyAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -358,7 +405,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -372,6 +420,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftyAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -379,7 +431,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.SwiftyAttributedString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -392,7 +445,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.SwiftyAttributedStringTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -405,7 +459,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.SwiftyAttributedStringTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
