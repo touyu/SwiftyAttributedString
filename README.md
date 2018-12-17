@@ -43,78 +43,41 @@ $ pod install
 
 ```swift
 textView.attributedText = "SwiftyAttributedString"
-            .add(attribute: Attribute(value: .font(.systemFont(ofSize: 16))))
-            .add(attribute: Attribute(value: .font(.boldSystemFont(ofSize: 16)),
-                                      range: .portion(of: .string("String"))))
-            .add(attribute: Attribute(value: .foregroundColor(.blue),
-                                      range: .portion(of: .string("Swifty"))))
-            .add(attribute: Attribute(value: .foregroundColor(.red),
-                                      range: .portion(of: .string("Attributed"))))
-            .add(attribute: Attribute(value: .foregroundColor(.orange),
-                                      range: .portion(of: .string("String"))))
-            .add(attribute: Attribute(value: .underlineStyle(1.0),
-                                      range: .portion(of: .string("Attributed"))))
-```
-
-```swift
-textView.attributedText = "SwiftyAttributedString"
-            .add(attributes: [Attribute(value: .font(.systemFont(ofSize: 16))),
-                              Attribute(value: .font(.boldSystemFont(ofSize: 16)),
-                                        range: .portion(of: .string("String"))),
-                              Attribute(value: .foregroundColor(.blue),
-                                        range: .portion(of: .string("Swifty"))),
-                              Attribute(value: .foregroundColor(.red),
-                                        range: .portion(of: .string("Attributed"))),
-                              Attribute(value: .foregroundColor(.orange),
-                                        range: .portion(of: .string("String"))),
-                              Attribute(value: .underlineStyle(1.0),
-                                        range: .portion(of: .string("Attributed")))])
-```
+        .attr
+        .font(.systemFont(ofSize: 30))
+        .range(of: "Swifty") {
+            $0.foregroundColor(.blue)
+        }
+        .range(of: "Attributed") {
+            $0.foregroundColor(.red)
+            $0.underlineStyle(.single)
+        }
+        .range(of: "String") {
+            $0.foregroundColor(.orange)
+            $0.font(.boldSystemFont(ofSize: 30))
+        }
+        .apply()
+```                        
 
 <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/001.png" height=70>
 
-## Usage
+## Documentation
+
 ```swift
-// If you do not specify a range, the value applies to the full range
-let attribute = Attribute(value: .font(.systemFont(ofSize: 16)))
+"SwiftyAttributedString"
+         .attr
+         .font(.systemFont(ofSize: 30)) // All range
+         .apply()
+  
 ```
 
 ```swift
-let attribute = Attribute(value: .font(.systemFont(ofSize: 16)),
-                          range: .all)
+"SwiftyAttributedString"
+         .attr
+         .range(start: 0, end: 3) {
+              font(.systemFont(ofSize: 30)) // A specific range
+         }
+         .apply()
+  
 ```
 
-```swift
-// Applied only to "Swifty"                          
-let attribute = Attribute(values: [.font(.systemFont(ofSize: 16)),
-                                   .foregroundColor(.blue)],
-                          range: .portion(of: .string("Swifty")))
-```
-
-- - -
-
-```swift
-textView.attributedText = "SwiftyAttributedString".add(attribute: attribute)
-```
-
-```swift
-textView.attributedText = "SwiftyAttributedString".add(attributes: [attribute1, attribute2, attribute3])
-```
-
-## References
-| Dictionary Key                                | Attributed Value                                    |
-| ----------------------------------------------| --------------------------------------------------- |
-| `NSFontAttributeName`                         | `.font(UIFont)`                                     |
-| `NSForegroundColorAttributeName`              | `.foregroundColor(UIColor)`                         |
-| `NSBackgroundColorAttributeName`              | `.backgroundColor(UIColor)`                         |
-| `NSKernAttributeName`                         | `.kern(NSNumber)`                                   |
-| `NSStrikethroughStyleAttributeName`           | `.strikethroughStyle(NSNumber)`                     |
-| `NSUnderlineStyleAttributeName`               | `.underlineStyle(NSNumber)`                         |
-| `NSStrokeColorAttributeName`                  | `.strokeColor(UIColor)`                             |
-| `NSStrokeWidthAttributeName`                  | `.strokeWidth(NSNumber)`                            |
-| `NSShadowAttributeName`                       | `.shadow(NSShadow)`                                 |
-| `NSTextEffectAttributeName`                   | `.textEffect(SwiftyAttributedString.TextEffect)`    |
-| `NSLinkAttributeName`                         | `.link(URL)`                                        |
-| `NSBaselineOffsetAttributeName`               | `.baselineOffset(NSNumber)`                         |
-| `NSObliquenessAttributeName`                  | `.obliqueness(NSNumber)`                            |
-| `NSExpansionAttributeName`                    | `.expansion(NSNumber)`                              |
