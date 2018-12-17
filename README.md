@@ -63,6 +63,8 @@ textView.attributedText = "SwiftyAttributedString"
 
 ## Documentation
 
+### All Range
+
 ```swift
 "SwiftyAttributedString"
          .attr
@@ -71,11 +73,13 @@ textView.attributedText = "SwiftyAttributedString"
   
 ```
 
+### The Specific Range
+
 ```swift
 "SwiftyAttributedString"
          .attr
          .range(start: 0, end: 3) {
-              font(.systemFont(ofSize: 30)) // A specific range
+              font(.systemFont(ofSize: 30)) // The specific range
          }
          .apply()
   
