@@ -3,10 +3,10 @@
 </p>
 
 ![Swift 4.2.1](https://img.shields.io/badge/Swift-4.2.1-orange.svg)
-![Platform](https://img.shields.io/cocoapods/p/SwiftyAttributedString.svg)
+<img src="https://img.shields.io/badge/platforms-iOS-lightgrey.svg">
 <img src="https://img.shields.io/badge/pod-v4.3.1-blue.svg">
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+<img src="https://img.shields.io/badge/license-MIT-blue.svg">
 
 ## Features
 - [x] Comfortable NSAttributedString
