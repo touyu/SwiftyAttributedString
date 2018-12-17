@@ -2,7 +2,7 @@
   <img src="https://github.com/touyu/SwiftyAttributedString/blob/assets/logo.png" width=900>
 </p>
 
-![Swift 3.0.2](https://img.shields.io/badge/Swift-3.0.2-orange.svg)
+![Swift 4.2.1](https://img.shields.io/badge/Swift-3.0.2-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftyAttributedString.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftyAttributedString.svg)](#cocoapods)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/touyu/SwiftyAttributedString#carthage)
