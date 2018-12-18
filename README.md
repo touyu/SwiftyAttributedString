@@ -13,6 +13,7 @@
 - [x] Better autocompletion
 - [x] Easy range specification
 - [x] Chainable methods
+- [x] Customizable
 
 ## Installation
 
@@ -83,5 +84,31 @@ textView.attributedText = "SwiftyAttributedString"
          }
          .apply()
   
+```
+
+### Customize
+
+```swift
+"SwiftyAttributedString"
+    .attr
+    .customize()
+    .apply()
+
+extension SwiftyAttributedString {
+    func customize() -> SwiftyAttributedString {
+        return font(.systemFont(ofSize: 30))
+        .range(of: "Swifty") {
+            $0.foregroundColor(.blue)
+        }
+        .range(of: "Attributed") {
+            $0.foregroundColor(.red)
+            $0.underlineStyle(.single)
+        }
+        .range(of: "String") {
+            $0.foregroundColor(.orange)
+            $0.font(.boldSystemFont(ofSize: 30))
+        }
+    }
+}
 ```
 
